@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=stylesheet href=dota.css>
+    <script type="text/javascript" src="Library/d3.v3.min.js"></script>
+    <script type="text/javascript" src="Library/d3.js"></script>
+    <script type="text/javascript" src="Library/d3plus.js"></script>
+    <script type="text/javascript" src="Library/d3.tip.js"></script>
+</head>
+<body>
+    <div id = "main"> 
+                <nav>
+            	    <ul>
+            	        <li><a href = "#Home">Home</a></li>
+            	        <li><a href = "#Map">Dota2 Map</a></li>
+            	        <li><a href = "#Position">Spatio-Temporal</a></li>
+                        <li><a href = "#HeatMap">Death HeatMap</a></li>
+                        <li><a href = "#Distance">Team Distance</a></li>
+                        <li><a href = "#Zone">Zone Change</a></li>
+            	    </ul>
+                </nav>
+
+            <div id = "content">
+                <!-- Home -->
+                <section id = "Home">
+                    <img src="Data/dota2.jpg" alt="Mountain View" style="width:1264px;height:window.innerHeight;" align="middle">
+                </section>
+
+               <!--  Map -->             
+                <section id = "Map">
+                 <p><b>Dota2  Map</b></p>
+                    <div id= "map" >
+                        <svg></svg>             
+                    </div>  
+                </section>
+
+                <!-- Initial Position -->
+                <section id = "Position">
+                <p><b>Spatio-Temporal</b></p>
+                    <div id = "location">
+                        <svg></svg>
+                    </div>
+                        <div id="xxx">
+                        <b>Initial Time:</b>
+                            <select id = "choose">
+                            <option value="v1">Start_Pro</option>
+                            <option value="v2">Start_VeryHigh</option>
+                            <option value="v3">Start_High</option>
+                            <option value="v4">Start_Normal</option> 
+                            <option value="v5">Start_All</option>       
+                            </select>
+                        <b>End Time:</b>
+                            <select id = "endtime">
+                            <option value="v1">End_Pro</option>
+                            <option value="v2">End_VeryHigh</option>
+                            <option value="v3">End_High</option>
+                            <option value="v4">End_Normal</option>
+                            <option value="v5">End_All</option>                               
+                            </select>                       
+                        </div>
+                </section>
+                
+                <!-- HeatMap -->
+                <section id = "HeatMap">
+                <p><b>Death HeatMap</b></p>
+                    <div id = "heatmap">
+                        <svg></svg>
+                    </div>
+                </section>
+
+                <!-- Team Distance -->
+                <section id = "Distance">
+                <p><b>Team Distance</b></p>
+                    <div id = "DD">
+                        <svg></svg>
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div id = "DD"></div>
+                        <div id="xx">
+                        <b>Time Period: </b>
+                            <select id = "time">
+                            <option value="v1">Early_time</option>
+                            <option value="v2">Late_time</option>      
+                            </select>
+                        </div>
+                    
+                </section>
+
+                <!-- Zone Change -->
+                <section id="Zone">
+                <p><b>Zone Change</b></p>
+                    <div id="ZC">
+                        <svg></svg>
+                    </div>
+                </section>
+                <div id="end">
+                <b>2015-12-16</b>
+                <p></p><b>Author: XiaoxuGao,Federico Falconieri</b>
+                </div>
+    <script type="text/javascript" src="Script/map.js"></script>
+    <script type="text/javascript" src="Script/position.js"></script>
+    <script type="text/javascript" src="Script/heatmap.js"></script>
+    <script type="text/javascript" src="Script/distance.js"></script>
+    <script type="text/javascript" src="Script/datazone.js"></script>
+    <script type="text/javascript" src="Script/zonechange.js"></script>
+
+</body>
+</html>

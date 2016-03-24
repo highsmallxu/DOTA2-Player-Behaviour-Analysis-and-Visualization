@@ -1,0 +1,124 @@
+        body {
+            background-color: cornsilk;
+        }
+        #header {
+        	background-color: black
+        }
+        nav {
+        	padding: 5px;
+        	background: #999;    
+        }
+        nav ul {
+        	list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333; 
+        }
+        nav li {
+        	float: left;
+        	margin: 0 50px 0 0;
+
+        }
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; 
+            font-family:fantasy;
+            font-size:20px;font-weight:bold;
+        }
+        nav li a:hover {
+        	background-color: #111;
+        }
+        .container {
+            text-align: center;
+        }
+        p{
+            font-family: Arnoldboecklin, fantasy; font-size: 30px;
+            margin-top: 10px; 
+            margin-bottom: 1px;
+            text-align: center;
+            background-color: palegoldenrod;
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+       #xaxis text, #yaxis text {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+    }
+/*    .d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}*/
+
+/*.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+*/
+/*.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}*/
+#sp g { 
+  z-index: 1; 
+  position: 
+  absolute; 
+  width:200px; 
+  height:100px; 
+  font-size: 15px;
+  text-align: center;
+  top:1520px; 
+  left:50px; 
+  font-family: Arnoldboecklin, fantasy; 
+} 
+#death g{
+  z-index: 1; 
+  position: 
+  absolute; 
+  width:200px; 
+  height:100px; 
+  font-size: 15px;
+  text-align: center;
+  top:2300px; 
+  left:50px; 
+  font-family: Arnoldboecklin, fantasy; 
+}
+#xxx {    
+   padding:10px 10px 0px 350px;
+
+}
+#xxx b{
+    font-family: Arnoldboecklin, fantasy; 
+}
+#xx {
+    padding:10px 10px 0px 450px;
+}
+#xx b{
+    font-family: Arnoldboecklin, fantasy; 
+}
+#end{
+    padding-left: 80px;
+    padding-top: 10px;
+}
+#end b{
+    /*padding:20px 10px 20px 580px;*/
+    font-family: Arnoldboecklin, fantasy; 
+}
